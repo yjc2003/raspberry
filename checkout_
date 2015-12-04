@@ -1,5 +1,5 @@
 #!/bin/sh
 
-git commit -m 'dummy comment'
-git push origin master
+git pull
+
 
