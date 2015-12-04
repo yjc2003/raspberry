@@ -6,5 +6,5 @@ then
   cmt=$1
 fi
 
-git commit -m "$cmt"
+git commit -a -m "$cmt"
 git push origin master
