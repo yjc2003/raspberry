@@ -27,6 +27,8 @@
 #include <unistd.h>
 #include <signal.h>
 #include <time.h>
+#include <stdlib.h>
+#include <string.h>
 #include "fifo.h"
 
 #define FIFO_FILENAME "tmhu"
@@ -40,16 +42,18 @@ struct TMHU {
 	}
 	
 	TMHU(double temperature,double humidity) {
-		this.temperature=temperature;
-		this.humidity=humidity;
+		this->temperature=temperature;
+		this->humidity=humidity;
 	}
 };
 
 static TMHU g_value;
 
 void setHuTm(DHT11 *dht) {
-	g_value.temperature= dht.getDHTTemperatureC();
-	g_value.humidity=dht.getDHTHumidity();
+	g_value.temperature= dht->getDHTTemperatureC();
+	g_value.humidity=dht->getDHTHumidity();
+	
+	printf("temperature:%f, humidity:%f\n",g_value.temperature,g_value.humidity);
 }
 
 
@@ -173,17 +177,21 @@ bool checkFile(char* filepath) {
 
 int main(int argc, char *argv[])
 {
-	char *filename=NULL;
+	const char *filename=NULL;
 	int intervalTime=1000; //millsec
+	int gpioPin=0;
 	int c; 
 	
-	while( (c = getopt(argc, argv, "hp:")) != -1) {
-        switch(c) {
+	setvbuf (stdout,NULL,_IONBF,0);
+	
+	while( (c = getopt(argc, argv, "ht:p:o:")) != -1) {
+		
+		switch(c) {
 			case 'h':
-				printf("Usage: sensorfetcher [-p pipe_filename ] [-t time_interval(millsec) ]\n");
+				printf("Usage: sensorfetcher [-p pipe_filename ] [-t time_interval(millsec)] [-o gpioNum]\n");
 				return 1;
 			case 'p':
-				filepath=optarg;
+				filename=optarg;
                  break;
 			case 't':
 				intervalTime= atoi(optarg);
@@ -191,6 +199,12 @@ int main(int argc, char *argv[])
 					intervalTime=1000;
 				}
 				break;
+			case 'o':
+				gpioPin=atoi(optarg);
+				if(gpioPin<0 || gpioPin>8) {
+					fprintf(stderr,"gpioPin invalid parameter, so adjust it to default\n");
+					gpioPin=0;
+				}
              case '?':
 				 if(optopt == 'p') {
 				     printf("option -f requires filename\n");
@@ -198,12 +212,16 @@ int main(int argc, char *argv[])
 					 printf("Unknown flag : %c", optopt);
 				 }
                  return 1;
-         }
+	    }
      }
 	 
 	 if(filename==NULL) {
 		filename=FIFO_FILENAME;
 	 }
+	 
+	 printf("pipe filename: %s\n",filename);
+	 printf("intervalTime set to %d\n",intervalTime);
+	 printf("goioPin set to %d\n",gpioPin);
 	 	
     if(wiringPiSetup() == -1) {
 		fprintf(stderr,"wiringPiSetup fail\n");
@@ -215,20 +233,20 @@ int main(int argc, char *argv[])
 		return 1;
 	}
 	
-	printf("Start Sensing Humidiy & Temperature\n");
+	printf("start sensing Humidiy & Temperature\n");
 	
-    DHT11 dht = DHT11(0);
-	
-	    
+    DHT11 dht = DHT11(gpioPin);
+		    
     while(true){
         
         dht.requestDHT11();
         if(dht.responseDHT11() == PASS){
         	if(dht.calculateDHTValue() == true){
-			
-				setHuTm(dht);
+											
+				setHuTm(&dht);
 				writeToFifo();
-				
+				// <TODO> 버퍼를 비우는 프로세스가 없어서 파이프가 일정크기만크 찼을경우
+				//  (count 가 일정회수 되면 파이프 크기체크해서 , 넘으면 truncate 시키자)
         	}
         }
 

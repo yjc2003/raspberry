@@ -2,7 +2,7 @@
 import http.client
 import json
 
-host = '192.168.92.163:8800'
+host = '192.168.1.30:8800'
 connection = http.client.HTTPSConnection('api.github.com')
 
 headers = {'Content-type': 'application/json'}
@@ -25,7 +25,7 @@ import httplib, urllib
 import sys
 import json
 
-host = '192.168.92.163'
+host = '192.168.1.30'
 port=8800
 
 body = '{"id":1,"type":"temp","method":"get",index:1}'

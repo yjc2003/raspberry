@@ -10,7 +10,7 @@
 
 #ifdef FIFO_WRITE
 	int openFifo_write(const char *name);
-	void writeFifo(char buf,int len);
+	void writeFifo(char *buf,int len);
 #endif
 
 #endif

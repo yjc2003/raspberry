@@ -1,7 +1,7 @@
 #ifndef _DHT11
 #define _DHT11
 #include <wiringPi.h>
-#include "WiringPi.h"
+#include "wireWrapper.h"
 
 // 1wire DHT error status
 typedef enum
