@@ -1,0 +1,4 @@
+#!/bin/sh
+
+sudo tcpdump -i lo -w tcpdump.log
+

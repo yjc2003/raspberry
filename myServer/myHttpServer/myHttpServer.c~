@@ -1,0 +1,144 @@
+#include "mongoose.h"
+
+static const char *s_http_port = "8800";
+static struct mg_serve_http_opts s_http_server_opts;
+//static const struct mg_str s_get_method = MG_STR("GET");
+//static const struct mg_str s_put_method = MG_STR("PUT");
+//static const struct mg_str s_delele_method = MG_STR("DELETE");
+static const struct mg_str s_post_method = MG_STR("POST");
+
+//static void *s_db_handle = NULL;
+//static const char *s_db_path = "api_server.db";
+
+
+static int has_prefix(const struct mg_str *uri, const struct mg_str *prefix) {
+  return (uri->len >= prefix->len && memcmp(uri->p, prefix->p, prefix->len) == 0)?1:0;
+}
+
+static int is_equal(const struct mg_str *s1, const struct mg_str *s2) {
+  return s1->len == s2->len && memcmp(s1->p, s2->p, s2->len) == 0;
+}
+
+static char* null_include(const struct mg_str *s) {
+
+  if(s->len==0) 
+    return strdup("");
+
+  char *buf = (char*)malloc(s->len+1);
+  memcpy(buf,s->p,s->len);
+  buf[s->len]=0;
+  return buf;
+}
+
+static void ev_handler(struct mg_connection *nc, int ev, void *ev_data) {
+
+  static const struct mg_str api_prefix = MG_STR("/api/v1");
+  struct http_message *hm = (struct http_message *) ev_data;
+  //struct mg_str key;
+
+  switch (ev) {
+    case MG_EV_HTTP_REQUEST:
+      
+      if (has_prefix(&hm->uri, &api_prefix)) {
+
+        //key.p = hm->uri.p + api_prefix.len;
+        //key.len = hm->uri.len - api_prefix.len;
+
+        if (is_equal(&hm->method, &s_post_method)) {
+
+	    //db_op(nc, hm, &key, s_db_handle, API_OP_POST);
+
+            if(hm->body.len>0) {
+               
+
+		char* req_body = null_include(&hm->body);
+            	printf("received body from client: %s\n",req_body);
+
+		//fflush(stdout);
+                char* rsp_body = (char*)malloc( strlen(req_body)+50);
+                sprintf(rsp_body,"{succss : request %s}",req_body);
+
+                char* _out = (char*)malloc( strlen(req_body)+300);
+                sprintf(_out,
+"HTTP/1.0 200 OK\r\nContent-Length:%d\r\nContent-Type: application/json\r\n\r\n%s",strlen(rsp_body),rsp_body);
+
+                free(req_body);
+                free(rsp_body);
+
+                //printf("%s\n",_out);
+
+		mg_printf(nc, "%s",_out);
+                free(_out);
+
+          	
+	    }else {
+ 		 mg_printf(nc, "%s","HTTP/1.0 500\r\n"
+                    "Content-Length: 0\r\n\r\n");
+ 	     }  
+	
+
+        } else {
+          mg_printf(nc, "%s",
+                    "HTTP/1.0 501 Not Implemented\r\n"
+                    "Content-Length: 0\r\n\r\n");
+        }
+
+
+
+      } else { // has_prefix
+        mg_serve_http(nc, hm, s_http_server_opts); /* Serve static content */
+      }
+      break;
+    default:
+      break;
+  }
+}
+
+int main(int argc, char *argv[]) {
+  struct mg_mgr mgr;
+  struct mg_connection *nc;
+  int i;
+
+  /* Open listening socket */
+  mg_mgr_init(&mgr, NULL);
+  nc = mg_bind(&mgr, s_http_port, ev_handler);
+  mg_set_protocol_http_websocket(nc);
+
+/* For each new connection, execute ev_handler in a separate thread */
+  mg_enable_multithreading(nc);
+
+  s_http_server_opts.document_root = "web_root";
+
+  /* Parse command line arguments */
+  for (i = 1; i < argc; i++) {
+    if (strcmp(argv[i], "-D") == 0) {
+      mgr.hexdump_file = argv[++i];
+    } /*else if (strcmp(argv[i], "-f") == 0) {
+      s_db_path = argv[++i];
+    }*/ else if (strcmp(argv[i], "-r") == 0) {
+      s_http_server_opts.document_root = argv[++i];
+    }
+  }
+
+  /*	
+  // Open database
+  if ((s_db_handle = db_open(s_db_path)) == NULL) {
+    fprintf(stderr, "Cannot open DB [%s]\n", s_db_path);
+    exit(EXIT_FAILURE);
+  }*/
+
+ setvbuf (stdout,NULL,_IONBF,0); // for printf immediately flush
+
+  /* Run event loop until signal is received */
+  printf("Starting myHttpServer on port %s\n", s_http_port);
+  for (;;)  {
+    mg_mgr_poll(&mgr, 1000);
+  }
+
+  /* Cleanup */
+  mg_mgr_free(&mgr);
+  //db_close(&s_db_handle);
+
+  return 0;
+}
+
