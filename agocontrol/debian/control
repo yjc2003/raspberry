@@ -1,0 +1,206 @@
+Source: agocontrol
+Maintainer: Harald Klein <hari@vt100.at>
+Section: misc
+Priority: optional
+Build-Depends: debhelper (>= 8), python, libqpidmessaging2-dev, libqpidtypes1-dev, libqpidcommon2-dev, libudev-dev, libqpidclient2-dev, uuid-dev, libopenzwave1.0-dev, libjsoncpp-dev, libtinyxml2-dev, libyaml-cpp-dev, libsqlite3-dev, libi2c-dev, libssl-dev, libboost-dev, intltool, libboost-date-time-dev,realpath,libcurl4-openssl-dev,libhdate-dev,liblua5.2-dev,libeibclient-dev,ola-dev
+Standards-Version: 3.9.2
+
+Package: agocontrol
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python, uuid-runtime, sqlite3, python-pysqlite2, python-qpid, libqpidmessaging2, libqpidtypes1, sasl2-bin, libsasl2-2, libsasl2-modules, qpidd, python-yaml, python-pandas, libjsoncpp0, libyaml-cpp0.3, libsqlite3-0, libagoclient1.0, python-agoclient, libssl-dev, libboost-program-options1.49.0, libboost-filesystem1.49.0, libboost-system1.49.0, python-nss, libboost-date-time1.49.0, libhdate1, python-psutil
+Description: automation system
+
+Package: agocontrol-dbg
+Section: debug
+Architecture: any
+Priority: extra
+Depends: agocontrol (= ${binary:Version}), ${misc:Depends}
+Description: debug info for agocontrol
+
+Package: libagoclient1.0
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqpidmessaging2, libqpidtypes1, libqpidclient2, libqpidcommon2, libuuid1, libjsoncpp0
+Description: client routines and utility functions for ago control device interfaces
+
+Package: libagoclient1.0-dev
+Section: libdevel
+Depends: ${misc:Depends}, libagoclient1.0
+Architecture: any
+Description: Development header files for the agocontrol client library
+
+Package: python-agoclient
+Section: libs
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python, python-qpid, python-simplejson
+Description: python client routines and utility functions for ago control device interfaces
+
+Package: agocontrol-owfs
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-ow, python-agoclient
+Description: 1wire device
+
+Package: agocontrol-webcam
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libcurl3
+Description: webcam device
+
+Package: agocontrol-x10
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-agoclient
+Description: x10 device
+
+Package: agocontrol-meloware
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-agoclient
+Description: meloware lightswitch app gateway
+
+Package: agocontrol-zwave
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libudev0, libopenzwave1.0, libagoclient1.0
+Description: ZWave interface driver
+
+Package: agocontrol-knx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqpidmessaging2, libqpidclient2, libqpidcommon2, libqpidtypes1, libuuid1, agocontrol, libeibclient0, libtinyxml2-0.0.0, libagoclient1.0
+Description: KNX interface driver
+
+Package: agocontrol-iscp
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-agoclient
+Description: Onkyo EISCP protocol support
+
+Package: agocontrol-enigma2
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-agoclient, python-avahi, python-gobject, python-dbus
+Description: Enigma2/Dreambox interface
+
+Package: agocontrol-asterisk
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-qpid, python-twisted, python-starpy
+Description: Asterisk PBX interface
+
+Package: agocontrol-apc
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-agoclient, python-pysnmp4
+Description: APC Switched Rack PDU interface
+
+Package: agocontrol-jointspace
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-qpid
+Description: JointSpace interface
+
+Package: agocontrol-rain8net
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libagoclient1.0
+Description: Rain8net interface driver
+
+Package: agocontrol-irtransethernet
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libagoclient1.0
+Description: IRTrans Ethernet interface driver
+
+Package: agocontrol-kwikwai
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libagoclient1.0
+Description: Kwikwai HDMI CEC bridge interface driver
+
+Package: agocontrol-firmata
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libagoclient1.0
+Description: Arduino Firmata interface driver
+
+Package: agocontrol-blinkm
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libagoclient1.0, i2c-tools
+Description: blinkm interface driver
+
+Package: agocontrol-i2c
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libagoclient1.0, i2c-tools
+Description: i2c interface driver
+
+Package: agocontrol-onvif
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libagoclient1.0, libssl1.0.0, libuuid1
+Description: ONVIF interface driver
+
+Package: agocontrol-enocean
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libagoclient1.0
+Description: EnOcean ESP3 interface driver
+
+Package: agocontrol-dmx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libagoclient1.0, ola
+Description: OLA DMX device
+
+Package: agocontrol-mediaproxy
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libagoclient1.0
+Description: media streaming proxy
+
+Package: agocontrol-raspigpio
+Architecture: armhf
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-agoclient
+Description: raspberry pi GPIO driver
+
+Package: agocontrol-raspi1w
+Architecture: armhf
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-agoclient
+Description: raspberry pi 1-wire GPIO driver
+
+Package: agocontrol-raspimcp
+Architecture: armhf
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-agoclient
+Description: raspberry pi MCP3xxx ADC GPIO driver
+
+Package: agocontrol-gc100
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libagoclient1.0
+Description: gc100 interface support
+
+Package: agocontrol-alert
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-agoclient, python-xmpp, python-tweepy, python-simplejson 
+Description: agocontrol alerts
+
+Package: agocontrol-squeezebox
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-agoclient
+Description: squeezeboxes
+
+Package: agocontrol-ipx800
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-agoclient
+Description: IPX800 relay boards
+
+Package: agocontrol-raspicamera
+Architecture: armhf
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-picamera, python-agoclient
+Description: raspberry pi camera device
+
+Package: agocontrol-scheduler
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-agoclient, python-dateutil
+Description: agocontrol scheduler
+
+Package: agocontrol-ping
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-agoclient
+Description: Host IP Pinger
+
+Package: agocontrol-mysensors
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libagoclient1.0
+Description: MySensors interface driver
+
+Package: agocontrol-rrdtool
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-rrdtool
+Description: agocontrol advanced graphing system based on rrdtool
+
+Package: agocontrol-zmcam
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libcurl3
+Description: zmcam device

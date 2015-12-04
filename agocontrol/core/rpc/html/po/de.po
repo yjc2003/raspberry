@@ -1,0 +1,1365 @@
+# German translation for ago control
+# Copyright (C) 2013 ago control
+# This file is distributed under the same license as the ago control package.
+# Christoph Jaeger <jaeger@agocontrol.com>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-16 14:51+0200\n"
+"PO-Revision-Date: 2013-10-01 18:04+0100\n"
+"Last-Translator: \n"
+"Language-Team: ago control <jaeger@agocontrol.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: ../templates/configuration.xml.in.h:1
+msgid "ago control Configuration"
+msgstr "ago control Konfiguration"
+
+#: ../templates/configuration.xml.in.h:2
+msgid "Welcome"
+msgstr "Willkommen"
+
+#: ../templates/configuration.xml.in.h:3
+msgid "Dashboard and Floorplans"
+msgstr "Übersicht und Raumpläne"
+
+#: ../templates/configuration.xml.in.h:4
+msgid "Rooms and Variables"
+msgstr "Räume und Variablen"
+
+#: ../templates/configuration.xml.in.h:5
+#: ../templates/navigation/configuration.xml.in.h:3
+msgid "Scenarios"
+msgstr "Szenarien"
+
+#: ../templates/configuration.xml.in.h:6
+#: ../templates/navigation/configuration.xml.in.h:4
+msgid "Events"
+msgstr "Ereignisse"
+
+#: ../templates/configuration.xml.in.h:7
+#: ../templates/navigation/configuration.xml.in.h:5
+msgid "Devices"
+msgstr "Geräte"
+
+#: ../templates/configuration.xml.in.h:8
+msgid "System and Cloud"
+msgstr "System und Cloud"
+
+#: ../templates/configuration.xml.in.h:9
+msgid ""
+"Welcome to the configuration page. You can find useful information and help "
+"for the configuration menu records in the left tabs."
+msgstr ""
+"Willkommen auf der Konfigurationsseite. In den linken Reitern findest Du "
+"eine kurze Anleitung zu den jeweiligen Menüpunkten."
+
+#: ../templates/configuration.xml.in.h:10
+msgid "Help and Documentation"
+msgstr "Hilfe und Dokumentation"
+
+#: ../templates/configuration.xml.in.h:11
+msgid "ago control Documentation"
+msgstr "ago control Dokumentation"
+
+#: ../templates/configuration.xml.in.h:12
+msgid "ago control Forum"
+msgstr "ago control Forum"
+
+#: ../templates/configuration.xml.in.h:13
+msgid "Contribute"
+msgstr "Mitarbeiten"
+
+#: ../templates/configuration.xml.in.h:14
+msgid ""
+"If you want to join the development community or if you like ago control and "
+"want to help us with your donation!"
+msgstr ""
+"Wenn Du zur Entwickler Gemeinschaft beitreten willst oder wenn Dir ago "
+"control gefällt und Du uns mit einer Spende unterstützen willst!"
+
+#: ../templates/configuration.xml.in.h:15
+msgid "Contribute to ago control"
+msgstr "Einen Beitrag für ago control leisten"
+
+#: ../templates/configuration.xml.in.h:16
+msgid ""
+"You can easly design your Dashboard or add new floorplans which are shown in "
+"the left main menu. Easily drag and drop your devices from the device tree "
+"on the left side to the grid and save it. You also can have multiple pages "
+"on a single grid. If you want to reorder the devices on the grid you just "
+"drag and drop it on the grid."
+msgstr ""
+"In der Übersicht findest Du alle Geräte die einen Namen haben. Wenn ein "
+"Gerät keinen Namen hat, dann kannst Du diesen auf der Geräte Seite vergeben. "
+"Um einen neuen Raumplan zu erstellen klickst Du auf Raumpläne, vergibtst "
+"einen Namen und klickst dann auf Raumplan erstellen. Auf den neuen Raumplan "
+"oder auch auf vorhandene kann man Geräte aus dem Raum-Klappmenü links unten "
+"auf die einzelnen Felder ziehen. Um ein Gerät zu entfernen zieht man es "
+"zurück auf das Raum-Klappmenü. Wenn man ein Gerät auf einer anderen Position "
+"haben möchte, dann einfach am Symbol geklickt halten und auf eine andere "
+"Position ziehen. Mit einem Klick auf das Symbol von einem Gerät bekommst Du "
+"alle Details und Funtkionen."
+
+#: ../templates/configuration.xml.in.h:17
+#: ../templates/navigation/configuration.xml.in.h:1
+#: ../templates/navigation/main.xml.in.h:3
+msgid "Floorplans"
+msgstr "Raumpläne"
+
+#: ../templates/dashboard.xml.in.h:1
+msgid "Search"
+msgstr "Suche"
+
+#: ../templates/navigation/configuration.xml.in.h:2
+msgid "Rooms"
+msgstr "Räume"
+
+#: ../templates/navigation/configuration.xml.in.h:6
+msgid "Variables"
+msgstr "Variablen"
+
+#: ../templates/navigation/configuration.xml.in.h:7
+msgid "Cloud"
+msgstr "Cloud"
+
+#: ../templates/navigation/configuration.xml.in.h:8
+msgid "Security"
+msgstr "Security"
+
+#: ../templates/navigation/configuration.xml.in.h:9
+#: ../templates/navigation/main.xml.in.h:4
+#: ../templates/configuration/plugins.xml.in.h:1
+msgid "Plugins"
+msgstr "Plugins"
+
+#: ../templates/navigation/configuration.xml.in.h:10
+msgid "System"
+msgstr "System"
+
+#: ../templates/navigation/main.xml.in.h:1
+msgid "System Status"
+msgstr "System Status"
+
+#: ../templates/navigation/main.xml.in.h:2
+msgid "Dashboard"
+msgstr "Übersicht"
+
+#: ../templates/navigation/main.xml.in.h:5
+msgid "Configuration"
+msgstr "Konfiguration"
+
+#: ../templates/details/default.xml.in.h:1
+#: ../templates/details/multilevelsensor.xml.in.h:1
+msgid "Room:"
+msgstr "Raum:"
+
+#: ../templates/details/default.xml.in.h:2
+msgid "State:"
+msgstr "Status:"
+
+#: ../templates/details/default.xml.in.h:3
+#: ../templates/details/multilevelsensor.xml.in.h:2
+msgid "Type:"
+msgstr "Gerätetyp:"
+
+#: ../templates/details/default.xml.in.h:4
+#: ../templates/details/multilevelsensor.xml.in.h:3
+msgid "Lastseen:"
+msgstr "Zuletzt gesehen:"
+
+#: ../templates/details/default.xml.in.h:5
+msgid "Command:"
+msgstr "Befehl:"
+
+#: ../templates/details/default.xml.in.h:6
+#: ../templates/configuration/scenarios.xml.in.h:9
+msgid "Run"
+msgstr "Ausführen"
+
+#: ../templates/configuration/floorplan.xml.in.h:1
+msgid "Are you sure that you want to delete this floorplan?"
+msgstr "Sicher, dass dieser Raumplan gelöscht werden soll?"
+
+#: ../templates/configuration/floorplan.xml.in.h:2
+#: ../templates/configuration/rooms.xml.in.h:2
+#: ../templates/configuration/scenarios.xml.in.h:2
+#: ../templates/configuration/events.xml.in.h:2
+#: ../templates/configuration/variables.xml.in.h:2
+#: ../templates/configuration/devices.xml.in.h:2
+msgid "Yes"
+msgstr "Ja"
+
+#: ../templates/configuration/floorplan.xml.in.h:3
+#: ../templates/configuration/rooms.xml.in.h:3
+#: ../templates/configuration/scenarios.xml.in.h:3
+#: ../templates/configuration/events.xml.in.h:3
+#: ../templates/configuration/variables.xml.in.h:3
+#: ../templates/configuration/devices.xml.in.h:3
+msgid "No"
+msgstr "Nein"
+
+#: ../templates/configuration/floorplan.xml.in.h:4
+msgid "Floorplan Configuration"
+msgstr "Raumplan Konfiguration"
+
+#: ../templates/configuration/floorplan.xml.in.h:5
+msgid "Floorplan Name"
+msgstr "Raumplan Name"
+
+#: ../templates/configuration/floorplan.xml.in.h:6
+#: ../templates/configuration/rooms.xml.in.h:6
+#: ../templates/configuration/scenarios.xml.in.h:7
+#: ../templates/configuration/events.xml.in.h:6
+#: ../templates/configuration/variables.xml.in.h:7
+#: ../templates/configuration/devices.xml.in.h:12
+msgid "Action"
+msgstr "Aktion"
+
+#: ../templates/configuration/floorplan.xml.in.h:7
+#: ../templates/configuration/scenarios.xml.in.h:10
+#: ../templates/configuration/events.xml.in.h:7
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: ../templates/configuration/floorplan.xml.in.h:8
+#: ../templates/configuration/rooms.xml.in.h:8
+#: ../templates/configuration/scenarios.xml.in.h:11
+#: ../templates/configuration/events.xml.in.h:8
+#: ../templates/configuration/variables.xml.in.h:8
+#: ../templates/configuration/devices.xml.in.h:15
+msgid "Delete"
+msgstr "Löschen"
+
+#: ../templates/configuration/floorplan.xml.in.h:9
+msgid "Create a new floorplan"
+msgstr "Neuen Raumplan erstellen"
+
+#: ../templates/configuration/floorplan.xml.in.h:10
+msgid "New floorplan name"
+msgstr "Name vom neuen Raumplan"
+
+#: ../templates/configuration/floorplan.xml.in.h:11
+msgid "Create Floorplan"
+msgstr "Raumplan erstellen"
+
+#: ../templates/configuration/rooms.xml.in.h:1
+msgid "Are you sure that you want to delete this room?"
+msgstr "Sicher, dass dieser Raum gelöscht werden soll?"
+
+#: ../templates/configuration/rooms.xml.in.h:4
+msgid "Room Configuration"
+msgstr "Raum Konfiguration"
+
+#: ../templates/configuration/rooms.xml.in.h:5
+#: ../templates/configuration/scenarios.xml.in.h:5
+#: ../templates/configuration/events.xml.in.h:5
+#: ../templates/configuration/variables.xml.in.h:5
+#: ../templates/configuration/plugins.xml.in.h:2
+msgid "Name"
+msgstr "Name"
+
+#: ../templates/configuration/rooms.xml.in.h:7
+#: ../templates/configuration/scenarios.xml.in.h:8
+#: ../templates/configuration/devices.xml.in.h:13
+msgid "unset"
+msgstr "nicht gewählt"
+
+#: ../templates/configuration/rooms.xml.in.h:9
+msgid "Create a new room"
+msgstr "Neuen Raum erstellen"
+
+#: ../templates/configuration/rooms.xml.in.h:10
+msgid "New room name"
+msgstr "Neuer Raumname"
+
+#: ../templates/configuration/rooms.xml.in.h:11
+msgid "Create Room"
+msgstr "Neuen Raum erstellen"
+
+#: ../templates/configuration/scenarios.xml.in.h:1
+msgid "Are you sure that you want to delete this scenario?"
+msgstr "Sicher, dass dieses Scenario gelöscht werden soll?"
+
+#: ../templates/configuration/scenarios.xml.in.h:4
+msgid "Scenario Configuration"
+msgstr "Szenario Konfiguration"
+
+#: ../templates/configuration/scenarios.xml.in.h:6
+msgid "Room"
+msgstr "Raum"
+
+#: ../templates/configuration/scenarios.xml.in.h:12
+msgid "Create Scenario"
+msgstr "Szenario erstellen"
+
+#: ../templates/configuration/scenarios.xml.in.h:13
+msgid ""
+"To create a scenario press the \"Add Command\" button to add commands. After "
+"you need to give a name and press \"Create Scenario\"."
+msgstr ""
+"Um ein Szenario zu erstellen, bitte den \"Befehl hinzufügen\" "
+"Knopf nutzen. Danach einen Name vergeben und dann auf \"Szenario erstellen\" drücken."
+
+#: ../templates/configuration/scenarios.xml.in.h:14
+msgid "Add Command"
+msgstr "Befehl hinzufügen"
+
+#: ../templates/configuration/scenarios.xml.in.h:15
+msgid "Input scenario name"
+msgstr "Namen für Szenario eingeben"
+
+#: ../templates/configuration/scenarios.xml.in.h:16
+msgid "Edit Scenario"
+msgstr "Szenario bearbeiten"
+
+#: ../templates/configuration/scenarios.xml.in.h:17
+#: ../templates/configuration/events.xml.in.h:13
+#: ../templates/configuration/security.xml.in.h:2
+#: ../plugins/agoblockly/templates/agoblockly.xml.in.h:12
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:17
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:81
+msgid "Save"
+msgstr "Speichern"
+
+#: ../templates/configuration/cloud.xml.in.h:1
+msgid "ago control Cloud Registration"
+msgstr "ago control Cloud Registrierung"
+
+#: ../templates/configuration/cloud.xml.in.h:2
+msgid "This service is currently under heavy development!"
+msgstr "An diesem Dienst wird gerade schwer gearbeitet!"
+
+#: ../templates/configuration/cloud.xml.in.h:3
+msgid ""
+"Register a ago control Cloud account to remote control your installation via "
+"<a target=\"_blank\" href=\"https://cloud.agocontrol.com\">cloud.agocontrol."
+"com</a><br/> You will be taken to the order page after completing your "
+"registration<br/>This service is not free."
+msgstr ""
+"Registriere Dich auf der ago control Cloud um die Installation via <a target="
+"\"_blank\" href=\"https://cloud.agocontrol.com\">cloud.agocontrol.com</a> "
+"fernzusteuern.<br/> Du wirst dann automatisch auf die Bestellseite weiter "
+"geleitet um die Registrierung abzuschliessen.<br />Dieses Service ist nicht "
+"kostenlos."
+
+#: ../templates/configuration/cloud.xml.in.h:4
+msgid "Your username"
+msgstr "Dein Benutzername"
+
+#: ../templates/configuration/cloud.xml.in.h:5
+msgid "Input your username"
+msgstr "Benutzername eingeben"
+
+#: ../templates/configuration/cloud.xml.in.h:6
+msgid "Your E-Mail address"
+msgstr "Deine E-Mail Adresse"
+
+#: ../templates/configuration/cloud.xml.in.h:7
+msgid "Input your E-Mail address"
+msgstr "E-Mail Adresse eingeben"
+
+#: ../templates/configuration/cloud.xml.in.h:8
+msgid "Your new password"
+msgstr "Dein Passwort"
+
+#: ../templates/configuration/cloud.xml.in.h:9
+msgid "Input new password"
+msgstr "Passwort eingeben"
+
+#: ../templates/configuration/cloud.xml.in.h:10
+msgid "Confirm new password"
+msgstr "Passwort bestätigen"
+
+#: ../templates/configuration/cloud.xml.in.h:11
+msgid "Register Cloud account"
+msgstr "Cloud Konto erstellen"
+
+#: ../templates/configuration/cloud.xml.in.h:12
+msgid "Cloud Activation"
+msgstr "Cloud Aktivierung"
+
+#: ../templates/configuration/cloud.xml.in.h:13
+msgid "Success, activation successful!"
+msgstr "Aktivierung erfolgreich abgeschlossen!"
+
+#: ../templates/configuration/cloud.xml.in.h:14
+msgid "Certificate read error!"
+msgstr "Fehler beim Lesen vom Zertifikat!"
+
+#: ../templates/configuration/cloud.xml.in.h:15
+msgid "Wrong username, password or activation PIN!"
+msgstr "Benutzername, Passwort oder Aktivierungsschlüssel(PIN) falsch!"
+
+#: ../templates/configuration/cloud.xml.in.h:16
+msgid "Close"
+msgstr "Schließen"
+
+#: ../templates/configuration/cloud.xml.in.h:17
+msgid "Your password"
+msgstr "Dein Passwort"
+
+#: ../templates/configuration/cloud.xml.in.h:18
+msgid "Input password"
+msgstr "Passwort eingeben"
+
+#: ../templates/configuration/cloud.xml.in.h:19
+msgid "Your PIN"
+msgstr "Dein PIN"
+
+#: ../templates/configuration/cloud.xml.in.h:20
+msgid "Input PIN"
+msgstr "PIN eingeben"
+
+#: ../templates/configuration/cloud.xml.in.h:21
+msgid "Activate Cloud"
+msgstr "Cloud aktivieren"
+
+#: ../templates/configuration/events.xml.in.h:1
+msgid "Are you sure that you want to delete this event?"
+msgstr "Sicher, dass dieses Ereignis gelöscht werden soll?"
+
+#: ../templates/configuration/events.xml.in.h:4
+msgid "Event Configuration"
+msgstr "Ereignis Konfiguration"
+
+#: ../templates/configuration/events.xml.in.h:9
+msgid "Create Event"
+msgstr "Ereignis erstellen"
+
+#: ../templates/configuration/events.xml.in.h:10
+msgid "Criteria"
+msgstr "Kriterium"
+
+#: ../templates/configuration/events.xml.in.h:11
+msgid "Input event name"
+msgstr "Namen für Ereignis eingeben"
+
+#: ../templates/configuration/events.xml.in.h:12
+msgid "Edit Event"
+msgstr "Ereignis bearbeiten"
+
+#: ../templates/configuration/variables.xml.in.h:1
+msgid "Are you sure that you want to delete this variable?"
+msgstr "Sicher, dass diese Variable gelöscht werden soll?"
+
+#: ../templates/configuration/variables.xml.in.h:4
+msgid "Variables Configuration"
+msgstr "Konfiguration der Variablen"
+
+#: ../templates/configuration/variables.xml.in.h:6
+#: ../plugins/zwave/templates/zwaveDashboard.xml.in.h:3
+msgid "Value"
+msgstr "Wert"
+
+#: ../templates/configuration/variables.xml.in.h:9
+msgid "Add new variable"
+msgstr "Neue Variable hinzufügen"
+
+#: ../templates/configuration/variables.xml.in.h:10
+msgid "Input variable name"
+msgstr "Namen für Variable eingeben"
+
+#: ../templates/configuration/variables.xml.in.h:11
+msgid "Create variable"
+msgstr "Variable erstellen"
+
+#: ../templates/configuration/devices.xml.in.h:1
+msgid "Are you sure that you want to delete this device?"
+msgstr "Sicher, dass dieses Gerät entfernt werden soll?"
+
+#: ../templates/configuration/devices.xml.in.h:4
+msgid "Device Configuration"
+msgstr "Geräte Konfiguration"
+
+#: ../templates/configuration/devices.xml.in.h:5
+msgid "Filter rooms:"
+msgstr "Filter Räume:"
+
+#: ../templates/configuration/devices.xml.in.h:6
+msgid "Filter devicetypes:"
+msgstr "Filter Gerätetypen:"
+
+#: ../templates/configuration/devices.xml.in.h:7
+msgid "Device Name"
+msgstr "Gerätename"
+
+#: ../templates/configuration/devices.xml.in.h:8
+msgid "Room Name"
+msgstr "Raumname"
+
+#: ../templates/configuration/devices.xml.in.h:9
+msgid "Device Type"
+msgstr "Gerätetyp"
+
+#: ../templates/configuration/devices.xml.in.h:10
+msgid "Handler"
+msgstr "Handler"
+
+#: ../templates/configuration/devices.xml.in.h:11
+msgid "IntID"
+msgstr "Interne ID"
+
+#: ../templates/configuration/devices.xml.in.h:14
+msgid "Details"
+msgstr "Details"
+
+#: ../templates/configuration/plugins.xml.in.h:3
+msgid "Version"
+msgstr "Version"
+
+#: ../templates/configuration/plugins.xml.in.h:4
+msgid "Description"
+msgstr "Beschreibung"
+
+#: ../templates/configuration/security.xml.in.h:1
+msgid "Security Configuration"
+msgstr "Security Konfiguration"
+
+#: ../templates/configuration/security.xml.in.h:3
+msgid "Add new zone"
+msgstr "Neue Zone hinzufügen"
+
+#: ../templates/configuration/security.xml.in.h:4
+msgid "Input zone name"
+msgstr "Namen der Zone eingeben"
+
+#: ../templates/configuration/security.xml.in.h:5
+msgid "Add zone"
+msgstr "Neue Zone hinzufügen"
+
+#: ../templates/configuration/security.xml.in.h:6
+msgid "Add new housemode"
+msgstr "Neuen Hausmodus hinzufügen"
+
+#: ../templates/configuration/security.xml.in.h:7
+msgid "Add housemode"
+msgstr "Hausmodus hinzufügen"
+
+#: ../templates/configuration/security.xml.in.h:8
+msgid "Change housemode"
+msgstr "Aktiven Hausmodus setzen"
+
+#: ../templates/configuration/security.xml.in.h:9
+msgid "Please enter a zone name."
+msgstr "Bitte Zonen Namen eingeben"
+
+#: ../templates/configuration/security.xml.in.h:10
+msgid "Please enter a housemode name."
+msgstr "Bitte Name des Hausmodus angeben"
+
+#: ../templates/configuration/security.xml.in.h:11
+msgid "You must create a housemode before you can add any zones."
+msgstr ""
+"Sie müssen zuerst einen Hausmodus erstellen bevor Sie zonen anlegen können"
+
+#: ../templates/details/multilevelsensor.xml.in.h:4
+msgid "Show as:"
+msgstr "Anzeigen als:"
+
+#: ../templates/details/multilevelsensor.xml.in.h:5
+msgid "Graph"
+msgstr "Graph"
+
+#: ../templates/details/multilevelsensor.xml.in.h:6
+msgid "List"
+msgstr "Liste"
+
+#: ../templates/details/multilevelsensor.xml.in.h:7
+msgid "From:"
+msgstr "Von:"
+
+#: ../templates/details/multilevelsensor.xml.in.h:8
+msgid "To:"
+msgstr "Bis:"
+
+#: ../templates/devices/switch.xml.in.h:1
+msgid "OFF"
+msgstr "AUS"
+
+#: ../templates/devices/switch.xml.in.h:2
+msgid "ON"
+msgstr "EIN"
+
+#: ../templates/devices/thermostat.xml.in.h:1
+msgid "Mode"
+msgstr "Modus"
+
+#: ../templates/devices/thermostat.xml.in.h:2
+msgid "FanMode"
+msgstr "Ventilator"
+
+#: ../templates/devices/thermostat.xml.in.h:3
+msgid "Heat"
+msgstr "Heizen"
+
+#: ../templates/devices/thermostat.xml.in.h:4
+msgid "Cool"
+msgstr "Kühlen"
+
+#: ../plugins/agoblockly/templates/agoblockly.xml.in.h:1
+msgid "luacontroller is not responding. Unable to execute action."
+msgstr ""
+"luacontroller antwortet nicht. Der Befehl kann nicht ausgeführt werden."
+
+#: ../plugins/agoblockly/templates/agoblockly.xml.in.h:2
+msgid "No block defined in workspace."
+msgstr "Kein Block im Arbeitsbereich definiert."
+
+#: ../plugins/agoblockly/templates/agoblockly.xml.in.h:3
+msgid "Script saved successfully."
+msgstr "Script wurde erfolgreich gespeichert."
+
+#: ../plugins/agoblockly/templates/agoblockly.xml.in.h:4
+msgid "Script loaded successfully."
+msgstr "Script wurde erfolgreich geladen."
+
+#: ../plugins/agoblockly/templates/agoblockly.xml.in.h:5
+msgid "Please select a script"
+msgstr "Bitte wähle ein Script"
+
+#: ../plugins/agoblockly/templates/agoblockly.xml.in.h:6
+msgid "Unable to load script, it seems to be corrupted!"
+msgstr "Skript kann nicht geladen werden, es scheint beschädigt zu sein!"
+
+#: ../plugins/agoblockly/templates/agoblockly.xml.in.h:7
+msgid "Script not saved"
+msgstr "Script wurde nicht gespeichert"
+
+#: ../plugins/agoblockly/templates/agoblockly.xml.in.h:8
+msgid "Please specify a valid script name"
+msgstr "Bitte gültigen Skriptnamen eingeben"
+
+#: ../plugins/agoblockly/templates/agoblockly.xml.in.h:9
+msgid "Delete selected script?"
+msgstr "Lösche ausgewähltes Script"
+
+#: ../plugins/agoblockly/templates/agoblockly.xml.in.h:10
+msgid "Script deleted successfully"
+msgstr "Script wurde erfolgreich gelöscht."
+
+#: ../plugins/agoblockly/templates/agoblockly.xml.in.h:11
+msgid "Unable to delete script"
+msgstr "Kann Script nicht löschen"
+
+#: ../plugins/agoblockly/templates/agoblockly.xml.in.h:13
+msgid "Load"
+msgstr "Laden"
+
+#: ../plugins/agoblockly/templates/agoblockly.xml.in.h:14
+msgid "Check"
+msgstr "Überprüfen"
+
+#: ../plugins/agoblockly/templates/agoblockly.xml.in.h:15
+msgid "View"
+msgstr "Ansehen"
+
+#: ../plugins/agoblockly/templates/agoblockly.xml.in.h:16
+msgid "Clear"
+msgstr "Löschen"
+
+#: ../plugins/agoblockly/templates/agoblockly.xml.in.h:17
+msgid "Script saved"
+msgstr "Script gespeichert"
+
+#: ../plugins/agoblockly/templates/agoblockly.xml.in.h:18
+msgid "Script modified"
+msgstr "Script geändert"
+
+#: ../plugins/agoblockly/templates/agoblockly.xml.in.h:19
+msgid "script(s) available"
+msgstr "Script(s) verfügbar"
+
+#: ../plugins/agoblockly/templates/agoblockly.xml.in.h:20
+msgid "Enter script name"
+msgstr "Namen für Script eingeben"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:1
+msgid "Agoalert is not responding"
+msgstr ""
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:2
+#: ../plugins/agoscheduler/templates/agoscheduler.xml.in.h:1
+msgid "Internal error"
+msgstr "Interner Fehler"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:3
+msgid "Unable to refresh PushBullet devices"
+msgstr "Kann PushBullet Geräte nicht aktualisieren"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:4
+msgid "PushBullet devices retrieved successfully"
+msgstr "PushBullet Geräte erfolgreich abgerufen"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:5
+msgid "generating url"
+msgstr "generiere URL"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:6
+msgid "authorization url"
+msgstr "Genehmigungs-URL"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:7
+msgid "Twitter configuration"
+msgstr "Twitter Konfiguration"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:8
+msgid ""
+"Agocontrol needs to be authorized to post alerts on your Twitter account."
+msgstr ""
+"ago control muss befugt sein, Warnungen auf Ihrem Twitter-Account zu posten."
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:9
+msgid "Twitter is configured"
+msgstr "Twitter ist konfiguriert"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:10
+msgid "Twitter is not configured"
+msgstr "Twitter ist nicht konfiguriert"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:11
+msgid "Follow instructions above to authorize this access:"
+msgstr "Bitte den Anweisungen oben folgen, um diesen Zugriff zu genehmigen:"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:12
+msgid ""
+"Click <a href=\"#\" data-bind=\"click: twitterUrl\">here</a> to generate an "
+"authorization url"
+msgstr ""
+"Klicke <a href=\"#\" data-bind=\"click: twitterUrl\">hier</a> um eine "
+"Genehmigungs URL zu generieren"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:13
+msgid "Then click on generated link"
+msgstr "Dann klicke auf den generierten Link"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:14
+msgid "Authorize access on Twitter"
+msgstr "Genehmige Zugriff auf Twitter"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:15
+msgid "Type given access code here"
+msgstr "Gib den Zugangscode hier ein"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:16
+msgid "Finally click on button to save access code"
+msgstr "Klicke auf die Schaltfläche, um den Zugangscode zu speichern"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:18
+msgid "To send test tweet on your account, click on button:"
+msgstr ""
+"Um einen Test Tweet auf den Twitter-Konto senden, klicke auf den Button:"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:19
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:35
+msgid "Test"
+msgstr "Test"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:20
+msgid "Google Talk configuration"
+msgstr "Google Talk Konfiguration"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:21
+msgid ""
+"Agocontrol needs your Google credentials to connect GTalk and send alerts."
+msgstr ""
+"ago control braucht die Google-Anmeldeinformationen um sich mit GTalk zu verbinden und Warnmeldungen zu senden."
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:22
+msgid "GTalk is configured"
+msgstr "GTalk ist konfiguriert"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:23
+msgid "GTalk is not configured"
+msgstr "GTalk ist nicht konfiguriert"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:24
+msgid "If you are using 2-Step verification, generate password"
+msgstr "Wenn eine 2-Step Verifikation verwendet wird, generiere ein Passwort"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:25
+msgid "clicking here"
+msgstr "Hier klicken"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:26
+msgid "Otherwise use your usual Google credentials:"
+msgstr "Ansonsten verwende die übliche Google-Anmeldeinformationen:"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:27
+msgid "Username"
+msgstr "Benutzername"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:28
+msgid "Password"
+msgstr "Passwort"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:29
+msgid "To send you a test message on GTalk, click on button:"
+msgstr "Um eine Testnachricht auf GTalk zu senden, klicke auf den Button:"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:30
+msgid "SMS configuration"
+msgstr "SMS Konfiguration"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:31
+msgid "Agocontrol uses"
+msgstr "ago control Benutzer"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:32
+msgid "to send SMS alerts."
+msgstr "um SMS-Benachrichtigungen zu senden."
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:33
+msgid "SMS is configured"
+msgstr "SMS ist konfiguriert"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:34
+msgid "SMS is not yet configured"
+msgstr "SMS ist nicht konfiguriert"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:35
+msgid "You need to create an account and add credits to send SMS"
+msgstr ""
+"Du musst ein Konto erstellen und Guthaben aufladen, um SMS senden zu können"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:36
+msgid "click here to view SMS rates"
+msgstr "Klicke hier um SMS Preise zu sehen"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:37
+msgid "12voip credentials:"
+msgstr "12voip Zugangsdaten"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:38
+msgid "To send you a test SMS, click on button"
+msgstr "Um ein Test-SMS zu senden, klicke den Knopf"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:39
+msgid "Email configuration"
+msgstr "E-Mail Konfiguration"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:40
+msgid "Agocontrol can send alert through email."
+msgstr "ago control kann Alarme via E-Mail senden"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:41
+msgid "Mail is configured"
+msgstr "E-Mail ist konfiguriert"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:42
+msgid "Mail is not yet configured"
+msgstr "E-Mail ist noch nicht konfiguriert"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:43
+msgid ""
+"Specify your email SMTP server and a sender email address (* is mandatory):"
+msgstr ""
+"Definiere Deinen E-Mail SMTP Server und eine Absenderadresse (* "
+"Pflichtfelder)"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:44
+msgid "SMTP server"
+msgstr "SMTP Server"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:45
+msgid "(could be smtp:port)"
+msgstr "(kann auch Server:Port sein)"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:46
+msgid "Sender email"
+msgstr "E-Mail Adresse des Absenders"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:47
+msgid "Login"
+msgstr "Benutzer"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:48
+msgid "TLS"
+msgstr "TLS"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:49
+msgid "To send you a test email, type your email address and click on button"
+msgstr ""
+"Um eine Testmail zu senden gib die E-Mail Adresse an und klicke auf den Knopf"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:50
+msgid "Push configuration"
+msgstr "Push Konfiguration"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:51
+msgid "Agocontrol can send alert through push notifications."
+msgstr "ago control kann Alarme mit Push Meldungen verschicken"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:52
+msgid "Push is configured"
+msgstr "Push ist konfiguriert"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:53
+msgid "Push is not yet configured"
+msgstr "Push ist nicht konfiguriert"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:54
+msgid "Choose push provider in list:"
+msgstr "Wähle einen Push Anbieter aus der Liste:"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:55
+msgid "Enter your apikey"
+msgstr "Gib Deinen API Key ein"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:56
+msgid "available here"
+msgstr "hier verfügbar"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:57
+msgid "Refresh your devices list clicking on the button"
+msgstr "Um die Geräteliste zu aktualisieren klicke auf den Knopf"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:58
+msgid "Refresh list"
+msgstr "Liste aktualisieren"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:59
+msgid "And choose your devices that will be notified"
+msgstr "Füge Geräte hinzu die Meldungen erhalten sollen"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:60
+msgid "Finally save your settings"
+msgstr "Deine Einstellungen speichern"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:61
+msgid "Enter your userid"
+msgstr "Benutzername eingeben"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:62
+msgid "And save your settings"
+msgstr "Und speichere die Einstellungen"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:63
+msgid "Enter your apikeys"
+msgstr "Gib Deine API-Keys ein"
+
+#: ../plugins/agoalert/templates/agoalert.xml.in.h:64
+msgid "To push you test notification, click on button"
+msgstr "Um eine Push Test-Nachricht zu senden, klicke den Knopf"
+
+#: ../plugins/agoscheduler/templates/agoscheduler.xml.in.h:2
+msgid "Agoscheduler is not responding. Unable to display schedules."
+msgstr ""
+"agoscheduler antwortet nicht. Kann die geplanten Aufgaben nicht anzeigen."
+
+#: ../plugins/agoscheduler/templates/agoscheduler.xml.in.h:3
+msgid "Schedule(s) added successfully."
+msgstr "Aufgabe wurde erfolgreich hinzugefügt."
+
+#: ../plugins/agoscheduler/templates/agoscheduler.xml.in.h:4
+msgid "Unable to add schedule(s)."
+msgstr "Kann die Aufgabe(n) nicht hinzufügen."
+
+#: ../plugins/agoscheduler/templates/agoscheduler.xml.in.h:5
+msgid "Schedule(s) updated successfully."
+msgstr "Aufgabe wurde erfolgreich gespeichert."
+
+#: ../plugins/agoscheduler/templates/agoscheduler.xml.in.h:6
+msgid "Unable to update schedule(s)."
+msgstr "Kann Aufgabe nicht aktualisieren"
+
+#: ../plugins/agoscheduler/templates/agoscheduler.xml.in.h:7
+msgid "Schedule(s) deleted successfully."
+msgstr "Aufgabe wurde erfolgreich gelöscht."
+
+#: ../plugins/agoscheduler/templates/agoscheduler.xml.in.h:8
+msgid "Unable to delete schedule(s)."
+msgstr "Kann Aufgabe nicht löschen."
+
+#: ../plugins/agoscheduler/templates/agoscheduler.xml.in.h:9
+msgid "At"
+msgstr "bei"
+
+#: ../plugins/agoscheduler/templates/agoscheduler.xml.in.h:10
+msgid "execute scenario"
+msgstr "Szenario ausführen"
+
+#: ../plugins/agoscheduler/templates/agoscheduler.xml.in.h:11
+msgid "And at"
+msgstr "Und um"
+
+#: ../plugins/agoscheduler/templates/agoscheduler.xml.in.h:12
+msgid "Repeat schedule"
+msgstr "Aufgabe wiederholen"
+
+#: ../plugins/agoscheduler/templates/agoscheduler.xml.in.h:13
+msgid "Never"
+msgstr "Nie"
+
+#: ../plugins/agoscheduler/templates/agoscheduler.xml.in.h:14
+msgid "Every day"
+msgstr "Jeden Tag"
+
+#: ../plugins/agoscheduler/templates/agoscheduler.xml.in.h:15
+msgid "Every week"
+msgstr "Jede Woche"
+
+#: ../plugins/agoscheduler/templates/agoscheduler.xml.in.h:16
+msgid "Every month"
+msgstr "Jeden Monat"
+
+#: ../plugins/agoscheduler/templates/agoscheduler.xml.in.h:17
+msgid "Every year"
+msgstr "Jedes Jahr"
+
+#: ../plugins/agoscheduler/templates/agoscheduler.xml.in.h:18
+msgid ""
+"Recurring schedules are linked each others. If you update one of them, all "
+"will be updated too."
+msgstr ""
+"Wiederkehrende Termine sind mit anderen verbunden. Wenn Du einen von ihnen "
+"aktualisierst werden alle anderen aktualisiert."
+
+#: ../plugins/agoscheduler/templates/agoscheduler.xml.in.h:19
+msgid "Schedule's color"
+msgstr "Farbe der Aufgabe"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:1
+#: ../plugins/zwave/templates/zwaveDashboard.xml.in.h:1
+msgid "zwavecontroller is not responding. Unable to execute action."
+msgstr ""
+"Der zwavecontroller antwortet nicht. Der Befehl kann nicht ausgeführt werden."
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:2
+msgid "Port configured"
+msgstr "Port ist konfiguriert"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:3
+msgid "Z-Wave controller resetted"
+msgstr "Z-Wave Controller zurückgesetzt"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:4
+msgid "Add node command sent to controller"
+msgstr "Node hinzufügen Befehl wurde an den Controller geschickt"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:5
+msgid "Remove node command sent to controller"
+msgstr "Node entfernen Befehl wurde an den Controller geschickt"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:6
+msgid "Test network command launched"
+msgstr "Netzwerk Test Befehl gestartet"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:7
+msgid "Cancel command sent to controller"
+msgstr "Abbrechen Befehl wurde an den Controller geschickt"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:8
+msgid "Save configuration sent to controller"
+msgstr "Konfiguration sichern wurde an den Controller geschickt"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:9
+msgid "Download config sent to controller"
+msgstr "Konfiguration herunterladen wurde an den Controller geschickt"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:10
+msgid "Turn on all nodes command sent to controller"
+msgstr "Alle Nodes einschalten wurde an den Controller geschickt"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:11
+msgid "Turn off all nodes command sent to controller"
+msgstr "Alle Nodes ausschalten wurde an den Controller geschickt"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:12
+msgid "Test node command sent to controller"
+msgstr "Test Node Befehl wurde an den Controller geschickt"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:13
+msgid "Test node command failed"
+msgstr "Test Node Befehl fehlgeschalgen"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:14
+msgid "Heal node command sent to controller"
+msgstr "Heile Node Befehl wurde an den Controller geschickt"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:15
+msgid "Parameter updated successfully"
+msgstr "Parameter erfolgreich aktualisiert"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:16
+msgid "Unable to update parameter"
+msgstr "Kann Parameter nicht aktualisieren"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:17
+msgid "Association added successfully"
+msgstr "Verbindung wurde erfolgreich hinzugefügt"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:18
+msgid "Association removed successfully"
+msgstr "Verbindung wurde erfolgreich entfernt"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:19
+msgid "Really remove this association?"
+msgstr "Diese Verbindung wirklich löschen?"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:20
+msgid "Really remove this node?"
+msgstr "Diesen Node wirklich löschen?"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:21
+msgid "Reset controller (everything will be lost!)"
+msgstr "Controller zurücksetzen (alle Konfigurationen gehen verloren!)"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:22
+msgid "Infos"
+msgstr "Informationen"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:23
+msgid "Status"
+msgstr "Status"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:24
+msgid "Actions"
+msgstr "Befehle"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:25
+msgid "Associations"
+msgstr "Verbindungen"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:26
+msgid "Advanced"
+msgstr "Erweitert"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:27
+msgid "In this tab you can perform some basic actions on selected Z-Wave node"
+msgstr ""
+"In diesem Reiter kannst Du grundlegende Aktionen auf ausgewählte Z-Wave "
+"Nodes durchführen"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:28
+msgid "Heal this node"
+msgstr "Diesen Node heilen"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:29
+msgid "Heal"
+msgstr "Heilen"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:30
+msgid ""
+"If you have troubles with this node, heal action can repair and diagnose the "
+"problem"
+msgstr "Wenn Du Probleme mit diesem Node hast, dann kann der Heilen Befehl das Problem beheben und analysieren"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:31
+msgid "Refresh node informations"
+msgstr "Node Informationen aktualisieren"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:32
+msgid "Refresh"
+msgstr "Aktualisieren"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:33
+msgid ""
+"Force controller to get node informations. This command lasts some time."
+msgstr "Zwinge den Controller die Node Informationen zu holen. Dieser Befehl kann einige Zeit in Anspruch nehmen."
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:34
+msgid "Test this node"
+msgstr "Diesen Node testen"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:36
+msgid "Launch some test procedures on this node. This command lasts some time!"
+msgstr "Führe einige Testroutinen auf diesen Node aus. Dieser Befehl kann einige Zeit in Anspruch nehmen!"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:37
+msgid ""
+"Here you can manage associations for this node. More informations are "
+"available"
+msgstr ""
+"Hier kannst Du Verbindungen für den Node verwalten. Mehr Informationen sind"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:38
+msgid "here"
+msgstr "hier"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:39
+msgid "Create new association with"
+msgstr "Erstelle neue Verbindung mit"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:40
+msgid "Create"
+msgstr "Erstellen"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:41
+msgid "List of existing associations"
+msgstr "Liste der verfügbaren Verbindungen"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:42
+msgid "no association"
+msgstr "Keine Verbindung"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:43
+msgid "Add association with"
+msgstr "Verbindung hinzufügen mit"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:44
+msgid "This tab is reserved to experts that knows what they do. Be careful!"
+msgstr ""
+"Dieser Reiter ist nur für Experten die wissen was sie tun. Sei vorsichtig!"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:45
+msgid "Remove this node from network"
+msgstr "Diesen Node vom Netzwerk entfernen"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:46
+msgid "Remove"
+msgstr "Entfernen"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:47
+msgid "Set parameter"
+msgstr "Setze Parameter"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:48
+msgid "to"
+msgstr "zu"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:49
+msgid "Set value"
+msgstr "Setze Wert"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:50
+msgid "Force selected node parameter to specified value"
+msgstr "Erzwinge den gewählten Wert für den Parameter auf dem ausgefählten Node"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:51
+msgid "Outer circle represents devices"
+msgstr "Äusserer Kreis stellt Geräte dar"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:52
+msgid "Nodes dependencies are displayed inside the circle"
+msgstr "Node Abhängigkeiten werden innerhalb des Kreises angezeigt"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:53
+msgid "Click on outer circle open selected device details"
+msgstr ""
+"Doppel-klicke auf den äusseren Kreis um Details vom ausgewählten Gerät "
+"anzuzeigen"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:54
+msgid ""
+"Mouse over a dependency shows relationship between source and target nodes"
+msgstr ""
+"Mouse-Over über eine Abhängigkeit zeigt die Beziehung zwischen Quell- und "
+"Ziel-Nodes an"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:55
+msgid "Zoom graph using your mouse wheel"
+msgstr "Eine Vergrößerung und Verkleinerung der Darstellung ist mit dem Mausrad möglich"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:56
+msgid "Dependencies"
+msgstr "Abhängigkeiten"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:57
+msgid "General"
+msgstr "Allgemein"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:58
+msgid "Statistics"
+msgstr "Statistiken"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:59
+msgid "nodes found in your network"
+msgstr "Nodes wurden in Deinem Netzwerk gefunden"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:60
+msgid "Building graph..."
+msgstr "Generiere Darstellung..."
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:61
+msgid "General Z-Wave configuration"
+msgstr "Allgemeine Z-Wave Konfiguration"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:62
+msgid "Configure controller USB port"
+msgstr "USB Port vom Controller"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:63
+msgid "Set"
+msgstr "Setzen"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:64
+msgid "Basic commands that can be launched on controller"
+msgstr "Grundlegende Befehle die an den Controller geschickt werden können"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:65
+msgid "Pair node to your network"
+msgstr "Node ins Netzwerk koppeln"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:66
+msgid "Pair"
+msgstr "Kopple"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:67
+msgid "Activate pairing mode of your Z-Wave controller"
+msgstr "Akviviere den Koppel-Modus vom Z-Wave Controller"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:68
+msgid "Unpair node from your network"
+msgstr "Node vom Netzwerk entkopplen"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:69
+msgid "Turn on/off all devices"
+msgstr "Schalte alle Geräte ein/aus"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:70
+msgid "On"
+msgstr "Ein"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:71
+msgid "Off"
+msgstr "Aus"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:72
+msgid "Test network"
+msgstr "Teste Netzwerk"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:73
+msgid "Z-Wave controller reports some statistics displayed below"
+msgstr "Statistiken vom Z-Wave Controller"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:74
+msgid "Advanced controller commands"
+msgstr "Erweiterte Controller Befehle"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:75
+msgid "Cancel running controller command"
+msgstr "Laufenden Controller Befehl abbrechen"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:76
+msgid "Reset"
+msgstr "Zurücksetzen"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:77
+msgid "Reset controller"
+msgstr "Controller Zurücksetzen"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:78
+msgid "Download configuration"
+msgstr "Konfiguration herunterladen"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:79
+msgid "Download"
+msgstr "Herunterladen"
+
+#: ../plugins/zwave/templates/zwaveConfig.xml.in.h:80
+msgid "Save configuration"
+msgstr "Konfiguration speichern"
+
+#: ../plugins/zwave/templates/zwaveDashboard.xml.in.h:2
+msgid "Statistic"
+msgstr "Statistik"
+
+#~ msgid "GRAPH"
+#~ msgstr "GRAPH"
