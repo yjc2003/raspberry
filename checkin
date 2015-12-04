@@ -1,4 +1,10 @@
 #!/bin/sh
 
-git pull
+cmt="dummy"
+if [ 1 -eq $# ]
+then
+  cmt=$1
+fi
 
+git commit -m "$cmt"
+git push origin master
