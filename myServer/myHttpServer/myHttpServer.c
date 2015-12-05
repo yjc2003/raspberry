@@ -7,7 +7,7 @@
 
 static const char *s_http_port = "8800";
 static struct mg_serve_http_opts s_http_server_opts;
-//static const struct mg_str s_get_method = MG_STR("GET");
+static const struct mg_str s_get_method = MG_STR("GET");
 //static const struct mg_str s_put_method = MG_STR("PUT");
 //static const struct mg_str s_delele_method = MG_STR("DELETE");
 static const struct mg_str s_post_method = MG_STR("POST");
@@ -66,9 +66,21 @@ void getTempHum(struct TMHU *pValue) {
 	
 }
 
+char* getRspbody(char *req_body) {
+	// get temperature and humidity from FIFO
+	struct TMHU value;
+	getTempHum(&value);
+
+	char* rsp_body = (char*)malloc( strlen(req_body)+255);
+	sprintf(rsp_body,"{succss : request %s,temperature:%0.3f, humidity:%0.3f}",
+		req_body,value.temperature,value.humidity);
+	return rsp_body;
+}
+
 static void ev_handler(struct mg_connection *nc, int ev, void *ev_data) {
 
 	static const struct mg_str api_prefix = MG_STR("/api/v1");
+	static const struct mg_str test_prefix = MG_STR("/tmhu");
 	struct http_message *hm = (struct http_message *) ev_data;
 	//struct mg_str key;
 
@@ -86,18 +98,12 @@ static void ev_handler(struct mg_connection *nc, int ev, void *ev_data) {
 
 				if(hm->body.len>0) {
 					char* req_body,*rsp_body,*out;
-					struct TMHU value;
-				   
+									   
 					req_body = null_include(&hm->body);
 					printf("received body from client: %s , thread_id(%u)\n",req_body,(int)pthread_self());
 					
-					// get temperature and humidity from FIFO
-					getTempHum(&value);
+					rsp_body= getRspbody(req_body);
 					
-					rsp_body = (char*)malloc( strlen(req_body)+255);
-					sprintf(rsp_body,"{succss : request %s,temperature:%0.3f, humidity:%0.3f}",
-						req_body,value.temperature,value.humidity);
-
 					out = (char*)malloc( strlen(rsp_body)+300);
 					sprintf(out,"HTTP/1.0 200 OK\r\nContent-Length:%d\r\nContent-Type: application/json\r\n\r\n%s",
 					strlen(rsp_body),rsp_body);
@@ -119,7 +125,29 @@ static void ev_handler(struct mg_connection *nc, int ev, void *ev_data) {
 				mg_printf(nc, "%s","HTTP/1.0 501 Not Implemented\r\nContent-Length: 0\r\n\r\n");
 			}
 			
-		} else { // has_prefix
+		}else if(has_prefix(&hm->uri, &test_prefix)) {
+
+			if (is_equal(&hm->method, &s_get_method)) {
+
+				struct TMHU value;
+				getTempHum(&value);
+
+				char rsp_body[100];
+				sprintf(rsp_body,"temperature:%0.3f, humidity:%0.3f",value.temperature,value.humidity);
+
+				char *out = (char*)malloc( strlen(rsp_body)+200);
+				sprintf(out,"HTTP/1.0 200 OK\r\nContent-Length:%d\r\nContent-Type: text/html\r\n\r\n%s",
+					strlen(rsp_body),rsp_body);
+
+				mg_printf(nc, "%s",out);
+				free(out);
+
+			}else {
+				mg_printf(nc, "%s","HTTP/1.0 501 Not Implemented\r\nContent-Length: 0\r\n\r\n");
+			}
+
+
+		}else { // has_prefix
 			mg_serve_http(nc, hm, s_http_server_opts); /* Serve static content */
 		}
 		break;
